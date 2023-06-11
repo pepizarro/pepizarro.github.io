@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #d0cccc;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/* HEADER */
+nav{
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+h1 {
+    margin-left: 0%;
+    font-size: 2.5rem;
+    font-family: Helvetica;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    font-weight: bold;
+}
+.links a{
+    margin: 1em;
+}
+.barras {
+    display: none;
+}
+
+@media (max-width: 800px){
+    .links a{
+        display: none;
+    }
+    .links{
+        justify-content: end;
+    }
+    .barras{
+        display: block;
+    }
+    
+}
+
+/* HERO */
+
+.heroContainer{
+    position: relative;
+    padding: 1em;
+    height: 70vh;
+    color: #e5e5e5;
+    background-color: #050c1c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    gap: 2em;  
+    z-index: 1;
+}
+
+.fondoHero{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#tsparticles{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+.profilePicContainer{
+    /* border: solid 1px whitesmoke; */
+    display: flex;
+    justify-content: end;
+    height: 50%;
+}
+.profilePic {
+    border-radius: 50%;
+}
+
+.heroDescription{
+    /* border: 1px solid whitesmoke;     */
+    display: flex;
+    justify-content: start;
+    text-shadow: 0 0 20px rgba(5, 12, 28, 1);
+    font-size: 1.4rem;
+}
+.heroDescription h2{
+    color: whitesmoke;
+    max-width: 80%;
+}
+
+@media (max-width: 800px){
+    .heroContainer{
+        flex-direction: column;
+    }
+    .profilePicContainer{
+        justify-content: center;
+        margin: 0;
+    }
+    .heroDescription{
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+    .heroDescription h2{
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* CONTENT */
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #050c1c;
+    padding: 1em;
+}
+
+/* FOOTER */
+footer{
+    background-color: #050c1c;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-size: 1.2rem;
+}
