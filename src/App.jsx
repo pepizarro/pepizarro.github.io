@@ -1,6 +1,6 @@
 
 import profilepic from './images/pedro.png'
-import particleBackground from './particleBackground'
+import particleBackground from './components/particleBackground'
 import React from "react";
 
 function Header(){
@@ -10,7 +10,6 @@ function Header(){
       <div className="links">
         <a>Proyectos</a>
         <a>Sobre mi</a>
-        <button className='barras'>Burger</button>
       </div>
     </nav>
   )

@@ -35,7 +35,7 @@ const particleBackground = () => {
                   value: 2, 
                 }, 
                 color: { 
-                  value: "#b3caff", 
+                  value: "#e8efff", 
                 }, 
                 number: { 
                   density: { 

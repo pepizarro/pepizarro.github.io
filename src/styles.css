@@ -63,7 +63,7 @@ h1 {
 .heroContainer{
     position: relative;
     padding: 1em;
-    height: 70vh;
+    height: 65vh;
     color: #e5e5e5;
     background-color: #050c1c;
     display: flex;
@@ -99,6 +99,7 @@ h1 {
     display: flex;
     justify-content: end;
     height: 50%;
+    margin-left: 1em;
 }
 .profilePic {
     border-radius: 50%;
