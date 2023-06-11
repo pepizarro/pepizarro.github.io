@@ -3,6 +3,8 @@ import profilepic from './images/pedro.png'
 import particleBackground from './components/particleBackground'
 import React from "react";
 
+
+
 function Header(){
   return (
     <nav>
@@ -10,6 +12,7 @@ function Header(){
       <div className="links">
         <a>Proyectos</a>
         <a>Sobre mi</a>
+        {/* <div className="icon"><FontAwesomeIcon icon={faEarthAmerica} /></div> */}
       </div>
     </nav>
   )
