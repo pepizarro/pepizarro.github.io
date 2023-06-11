@@ -43,6 +43,7 @@ h1 {
 }
 .barras {
     display: none;
+    font-size: 2rem;
 }
 
 @media (max-width: 800px){

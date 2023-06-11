@@ -2,6 +2,9 @@
 import profilepic from './images/pedro.png'
 import particleBackground from './components/particleBackground'
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
 
 
 
@@ -12,7 +15,7 @@ function Header(){
       <div className="links">
         <a>Proyectos</a>
         <a>Sobre mi</a>
-        {/* <div className="icon"><FontAwesomeIcon icon={faEarthAmerica} /></div> */}
+        <div className="barras"><FontAwesomeIcon icon={faBars} /></div>
       </div>
     </nav>
   )
