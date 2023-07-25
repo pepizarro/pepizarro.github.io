@@ -8,7 +8,6 @@ const particleBackground = () => {
         await loadFull(main); 
       }; 
       const particlesLoaded = (container) => { 
-        console.log(container); 
       }; 
     return ( 
           <Particles 
@@ -26,30 +25,31 @@ const particleBackground = () => {
               particles: { 
                 shape: { 
                   type: "circle", 
+
                 }, 
                 size: { 
                   random: { 
                     enable: true, 
-                    minimumValue: 1, 
+                    minimumValue: 0.1, 
                   }, 
-                  value: 2, 
+                  value: 1, 
                 }, 
                 color: { 
-                  value: "#e8efff", 
+                  value: "#c2d4ff", 
                 }, 
                 number: { 
                   density: { 
                     enable: true, 
-                    area: 700, 
+                    area: 400, 
                   }, 
                   limit: 0, 
-                  value: 500, 
+                  value: 3000, 
                 }, 
                 opacity: { 
                   animation: { 
                     enable: true, 
-                    minimumValue: 0.3, 
-                    speed: 1.3, 
+                    minimumValue: 1, 
+                    speed: 1.5, 
                     sync: false, 
                   }, 
                   random: { 
@@ -61,7 +61,7 @@ const particleBackground = () => {
                 interactivity: { 
                   detectsOn: "canvas", 
                   events: { 
-                    resize: true, 
+                    resize: false, 
                   }, 
                 }, 
               }, 

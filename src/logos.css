@@ -1,0 +1,44 @@
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+.tech-logo{
+    width: 100px;
+    height: auto;
+    margin: 1em;
+    transition: all 0.2s cubic-bezier(0,.93,.59,.96);
+}   
+
+
+.react-logo{
+    animation: rotation 10s infinite linear;
+}
+
+.mongodb-logo{
+    width: 150px;
+}
+
+.azure-logo{
+    width: 70px;
+}
+
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 800px) {
+    .tech-logo{
+        width: 80px;
+    }   
+}

@@ -1,9 +1,9 @@
-
-import profilepic from './images/pedro.png'
-import particleBackground from './components/particleBackground'
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import Proyectos from './components/proyectos';
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 
 
@@ -21,37 +21,14 @@ function Header(){
   )
 }
 
-
-
-function Hero() {
-  return (
-    <div className="heroContainer">
-      <div className='profilePicContainer'>
-        <img src={profilepic} alt="image" className='profilePic'/>
-      </div>
-      <div className='heroDescription'>
-        <h2>Estudiante y aspirante a ingeniero de software</h2>
-      </div>
-      <div className='fondoHero' id='particleFondo'>
-        {particleBackground()}
-        </div>
-    </div>
-  );
-}
-
 function Content(){
   return (
     <div className='contentContainer'>
-      <p>Content</p>
+      <Proyectos />
     </div>
   )
 }
 
-function Footer(){
-  return (
-    <footer>Footer</footer>
-  )
-}
 
 /*----------------------------*/
 
