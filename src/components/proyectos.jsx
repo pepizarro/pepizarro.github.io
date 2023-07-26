@@ -29,9 +29,6 @@ export default function Proyectos(){
                     </div>
                 </div>
                 <div className="miliaImgContainer">
-                    <div className='small-img card'>
-                        {/* <img src="https://imagenesportfolio.blob.core.windows.net/imgs/admin-milia.png" alt="image" /> */}
-                    </div>
                     <div className='big-img2 card'>
                         {/* <img src="https://imagenesportfolio.blob.core.windows.net/imgs/admin-milia2.png" alt="image" /> */}
                     </div>

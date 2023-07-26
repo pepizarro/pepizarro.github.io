@@ -29,19 +29,27 @@ nav{
     align-items: center;
     height: 4rem;
 }   
-h1 {
+.header-h1 {
+    text-decoration: none;
+    color: var(--color-negro);
+    font-weight: bold;
     margin-left: 0%;
     font-size: 2rem;
+    cursor: pointer;
 }
 .links {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 20%;
-    font-weight: bold;
 }
-.links a{
-    margin: 1em;
+.links button{
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    color: var(--color-negro);
+    cursor: pointer;
 }
 .barras {
     display: none;
@@ -174,12 +182,27 @@ h1 {
     height: 100vh;
     background-color: var(--color-blanco);
     color: var(--color-negro);
-    padding: 1em 2em;
+    padding: 1em 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.proyectos-title{
+.contentContainer h1{
     color: var(--color-verde);
+    margin-bottom: 2rem;
 }
+.aboutme-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proyectos-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* MILIA */
 .Milia{
@@ -205,7 +228,6 @@ h1 {
 
 .miliaImgContainer{
     grid-area: cards;
-    aspect-ratio: 1/1;
     display: grid;
     place-items: center;
 }
@@ -241,7 +263,7 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    transform: translateX(10%) rotate(3deg);
+    transform: translate(30%, -10%);
 }
 .big-img2{
     background-image: url("https://imagenesportfolio.blob.core.windows.net/imgs/admin-milia.png");
@@ -249,29 +271,20 @@ h1 {
     background-repeat: no-repeat;
     background-position: center center;
     background-color: rgba(26, 65, 184, 0.5);
-    transform: rotate(-3deg);
-}
-.small-img{
-    background-image: url("https://imagenesportfolio.blob.core.windows.net/imgs/front-milia2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    transform: rotate(-90deg);
+    transform: translate(15%, 10%);
 }
 .miliaImgContainer:hover > .big-img{
-    transform: translate(30%, -45%) rotate(1deg);
+    transform: translate(40%, -40%);
 }
 .miliaImgContainer:hover > .big-img2{
-    transform: translate(-30%, 20%) rotate(6deg);
-}
-.miliaImgContainer:hover > .small-img{
-    transform: translate(75%,50%) rotate(0deg);
+    transform: translate(0%, 20%);
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 1200px), (max-height: 800px){
     .Milia {
         display: inline;
+        padding: 0 2vw;
     }
     .miliaInfoContainer h2,
     .miliaInfoContainer p{

@@ -1,43 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import Proyectos from './components/proyectos';
+import Footer from "./components/Footer";
+import AboutMe from "./components/Aboutme";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import Proyectos from './components/proyectos';
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
+import Home from "./components/Home";
 
 
 
-
-function Header(){
-  return (
-    <nav>
-      <h1>Pedro Pizarro</h1>
-      <div className="links">
-        <a>Proyectos</a>
-        <a>Sobre mi</a>
-        <div className="barras"><FontAwesomeIcon icon={faBars} /></div>
-      </div>
-    </nav>
-  )
-}
-
-function Content(){
-  return (
-    <div className='contentContainer'>
-      <Proyectos />
-    </div>
-  )
-}
 
 
 /*----------------------------*/
 
 function App() {
+
+  const [component, setComponent] = useState('home')
+  const handleLinkClick = (component) => {
+    setComponent(component);
+  };
+
   return (
     <div>
-      <Header />
-      <Hero />
-      <Content />
+      <nav>
+          <h1 className='header-h1' onClick={() => handleLinkClick('home')}>Pedro Pizarro</h1>
+        <div className="links">
+          <button onClick={() => handleLinkClick('proyectos')}>Proyectos</button>
+          <button onClick={() => handleLinkClick('aboutme')}>Sobre mi</button>
+          <div className="barras"><FontAwesomeIcon icon={faBars} /></div>
+        </div>
+      </nav>
+      {component === 'home' && <Home />}
+      {component === 'proyectos' && <Proyectos />}
+      {component === 'aboutme' && <AboutMe />}
       <Footer />
     </div>
   )
