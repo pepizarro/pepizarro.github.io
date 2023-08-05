@@ -1,5 +1,5 @@
 import particleBackground from './particleBackground'
-import profilepic from '../images/pedro.png'
+import profilepic from '../images/pedro.jpg'
 import { useContext, useEffect, useState } from 'react';
 import { IdiomaContext } from './IdiomaContext';
 

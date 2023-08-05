@@ -8,7 +8,7 @@ export default function AboutMe(){
 
     return (
         <div className="aboutme-container">
-            <h1 className="page-header">Sobre mí</h1>
+            <h1 className="page-header">{idioma === 'es' ? 'Sobre mí' : 'About me'}</h1>
             <div className="aboutme-info">
                 <div className="aboutme-info-p">
                     {idioma === 'es' ? (<p>

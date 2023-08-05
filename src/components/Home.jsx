@@ -13,6 +13,8 @@ export default function Home(){
     const [email, setEmail] = useState('')
     const [mensaje, setMensaje] = useState('')
 
+    const [messagesent, setMessagesent] = useState(false)
+
     function handleSubmit(){
         const formData = {
             name: nombre,
@@ -36,6 +38,7 @@ export default function Home(){
         setNombre('')
         setEmail('')
         setMensaje('')
+        setMessagesent(true)
     }
     useEffect(() => {
         setNombre(nombre);
@@ -100,6 +103,11 @@ export default function Home(){
                         </textarea>
                         
                         <button onClick={handleSubmit}>{idioma === 'es' ? 'Enviar' : 'Submit'} </button>
+                        {messagesent ? (
+                          <h3>{idioma === 'es' ? 'Mensaje enviado' : 'Message sent'}</h3>
+                        ) : (
+                          <></>
+                        )}
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ export default function Proyectos(){
 
     return (
         <div className="proyectos-container">
-            <h1 className="page-header">Proyectos</h1>  
+            <h1 className="page-header">{idioma === 'es' ? 'Proyectos' : 'Projects'}</h1>  
             <div className="Milia">
                 <div className="miliaInfoContainer">
                     <div className='miliaLogoContainer'>
@@ -34,7 +34,7 @@ export default function Proyectos(){
                         </p>
                     )}
                     <div className="miliaTecnologias">
-                        <h3>Tecnologías</h3>    
+                        <h3>{idioma === 'es' ? 'Tecnologías' : 'Technologies'}</h3>    
                         <div className='logos'>
                             <img src={reactLogo} alt="react" className='react-logo tech-logo' />
                             <img src={nextLogo} alt="nextjs" className='next-logo tech-logo' />
@@ -45,10 +45,8 @@ export default function Proyectos(){
                 </div>
                 <div className="miliaImgContainer">
                     <div className='big-img2 card'>
-                        {/* <img src="https://imagenesportfolio.blob.core.windows.net/imgs/admin-milia2.png" alt="image" /> */}
                     </div>
                     <div className='big-img card'>
-                        {/* <img src="https://imagenesportfolio.blob.core.windows.net/imgs/front-emi.png" alt="image" /> */}
                     </div>
                 </div>
             </div>
