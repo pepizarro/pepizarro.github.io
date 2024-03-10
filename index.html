@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="dark" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="src/output.css" rel="stylesheet">
+    <script src="app.js" type="module" defer></script>
+
+    <!-- <link rel="icon" href="images/icons/icon.png"> -->
+  </head>
+
+  <body class="dark:bg-black">
+    <header class="dark:text-white">
+      <h1>Header</h1>
+      <button class="border-2 border-blue-500 p-2" id="changethemebutton">Theme</button>
+      <button class="border-2 border-blue-500 p-2" id="change-lang-es">Español</button>
+      <button class="border-2 border-blue-500 p-2" id="change-lang-en">English</button>
+      <a class="navlink" href="/">
+          Home
+      </a>
+      <a class="navlink" href="/about">
+          About
+      </a>
+    </header>
+
+    <main class="max-w-[700px] flex justify-center items-center mx-auto dark:text-white"> 
+    </main>
+    <div class="m-10 dark:bg-black dark:text-white">
+      <p>Normal text</p>
+      <p class="dark:font-bold font-inter">Dark Text</p>
+      <p lang-key="locale-test">Testing Locale</p>
+    </div>
+
+  </body>
+</html>
