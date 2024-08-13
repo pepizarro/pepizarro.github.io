@@ -1,0 +1,60 @@
+
+#home-title {
+  animation: fadeIn 0.6s forwards;
+}
+#home-image {
+  animation: fadeIn 0.7s forwards;
+}
+#home-links {
+  animation: fadeIn 0.9s forwards;
+}
+#home-description {
+  animation: fadeIn 1.3s forwards;
+}
+
+
+#about-title {
+  animation: fadeIn 0.6s forwards;
+}
+#about-education {
+  animation: fromBottom 0.5s forwards;
+}
+#about-experience {
+  animation: fromBottom 0.75s forwards;
+}
+
+#projects-title {
+  animation: fadeIn 0.6s forwards;
+}
+#projects-description {
+  animation: fadeIn 0.9s forwards;
+}
+#project-redis {
+  animation: fadeIn 1.2s forwards;
+}
+#project-interny {
+  animation: fadeIn 1.6s forwards;
+}
+
+
+
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
