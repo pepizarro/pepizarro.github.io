@@ -1,0 +1,50 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+    },
+
+    "change-theme": "Theme",
+    "homepage-description": "Student of the uai university...",
+    "homepage-text": "I am a student pursuing Informatics Engineering at UAI. I'm passionate about building and understanding software, with special interests in backend development and distributed systems. \n",
+    "homepage-skills": "Skills and Interests",
+
+    "locale-test": "Testing Locale",
+
+    "about-title": "About",
+    "about-description": "A quick view of my education and professional experience...",
+
+
+    "about-education-title": "Education",
+
+    "about-uai-title": "Informatics Engineering",
+    "about-uai-description": "Bachelor's degree in CS Engineering or Informatics Engineering at Universidad Adolfo Ibáñez, Santiago, Chile.",
+    "about-uai-caption": "I am a fourth-year student at Universidad Adolfo Ibáñez. I have completed key courses such as Data Structures and Algorithms, Databases, Computer Networks, Artificial Intelligence, Professional Programming and more.",
+    "about-uai-caption2": "I participated in a research, contributing to the design and development of a C++ library for reinforcement learning agents and successfully implementing a Q-learning agent for multiple environments. This experience provided me with a profound understanding of the reinforcement learning field and the ability to work with large codebases.",
+
+
+    "about-experience-title": "Experience",
+
+    "about-leasity-title": "Backend Software Developer Intern",
+    "about-leasity-date": "2023 - 2024 / 3 Months",
+    "about-leasity-description": "Summer internship at Leasity, specializing in backend development.",
+    "about-leasity-caption": "Leasity is a startup that specializes in property management software. I worked on the backend team, taking on projects that greatly improved my technical and design skills. I primarily developed microservices in Golang and created internal tools. The main technologies I used were Golang, Docker, and AWS using services such as S3, and I also gained familiarity with other technologies like Kafka.",
+    "about-leasity-caption2": "This experience enhanced my ability to design and develop large, maintainable programs, as well as my understanding of the software development process in a professional environment.",
+
+    "projects-title": "Projects",
+    "projects-description": "Some of my school and personal projects",
+    "code": "Code",
+    
+    "redis-title": "Redis From Scratch",
+    "redis-description": "I developed a Redis clone in Golang, which was a really fun and educational experience. This project allowed me to learn about the internals of Redis, gaining a deeper understanding of some of the design choices and challenges involved in building such a system, even in a simplified form. \n \n The main features of my implementation include reading and interpreting an RDB file (which was my favourite part), implementing a RESP protocol parser, and adding basic support for Redis replication and transactions. \n \n Through this project, I gained experience using key Go features, such as concurrency and generics, and deepened my knowledge in areas like data persistence, networking and replication.",
+    "redis-codecrafters1": "\nThis project was built using the ",
+    "redis-codecrafters2": "platform.",
+
+    "interny-title": "Interny",
+    "interny-subtitle": "Centralized Internship Management Platform",
+    "interny-description1": "As part of a team project, I contributed to the development of Interny, a platform designed to centralize the management of university internships. The platform allows students to search for internships, register their work and receive feedback from both the company and the teachers.",
+    "interny-description2": "The platform also supports teachers and career directors by providing them with tools to visualize student data, evaluate internships, and maintain communication throughout the process.",
+    "interny-description3": "In addition, companies can use Interny to post internship opportunities, assess student performance, and select the most suitable candidates for their needs.",
+    "interny-description4": "My contributions focused on the design of the application's architecture and design, developing the front-end in NextJS, and managing the whole deployment process using tools such as Docker and AWS EC2 and S3."
+}
