@@ -1,16 +1,15 @@
 export class HomePage extends HTMLElement {
-    constructor() {
-        super();
+  constructor() {
+    super();
+  }
 
-    }
+  // when the component is attached to the DOM
+  connectedCallback() {
+    this.style.width = "100%";
+    this.innerHTML = "";
 
-    // when the component is attached to the DOM
-    connectedCallback() {
-        this.style.width = "100%";
-        this.innerHTML = "";
-
-        this.innerHTML = `
-            <div class="w-full max-h-[500px] px-12 grid grid-rows-[112px,80px,_1fr] md:grid-rows-[70px,_1fr,_1fr] grid-cols-[142px,_1fr]">
+    this.innerHTML = `
+            <div id="page-component" class="hidden w-full max-h-[500px] px-12 grid grid-rows-[112px,80px,_1fr] md:grid-rows-[70px,_1fr,_1fr] grid-cols-[142px,_1fr]">
                 <div id="home-image" class="object-cover  w-28 h-28 justify-self-start self-center rounded-full row-start-1 row-span-1 col-span-1 md:row-start-2">
                     <img src="/assets/profile.png" class="rounded-full w-28 h-28" alt="Pedro Pizarro">
                 </div>
@@ -57,6 +56,13 @@ export class HomePage extends HTMLElement {
                 </div>
                 <div id="home-description" class="col-span-2 row-span-1 py-3 md:mt-1">
                     <p lang-key="homepage-text" class="text-pretty  mb-3 text-gray-800 dark:text-gray-300"></p>
+                    <a target="_blank" href="/cv-es.pdf" class="flex items-center text-blue-600 dark:text-blue-200 hover:underline">
+                        <p class="mr-1">CV</p>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.53033 4.75C4.53033 4.33579 4.86612 4 5.28033 4H11.2907C11.705 4 12.0407 4.33579 12.0407 4.75V10.7604C12.0407 11.1746 11.705 11.5104 11.2907 11.5104C10.8765 11.5104 10.5407 11.1746 10.5407 10.7604V6.56066L5.28033 11.8211C4.98744 12.114 4.51256 12.114 4.21967 11.8211C3.92678 11.5282 3.92678 11.0533 4.21967 10.7604L9.48008 5.5H5.28033C4.86612 5.5 4.53033 5.16421 4.53033 4.75Z"
+                                  class="fill-blue-600 dark:fill-blue-200"/>
+                        </svg>
+                    </a>
 
                     <h4 lang-key="homepage-skills" class="text-lg font-bold mb-2 mt-3"></h4>
                     <ul class="list-disc flex flex-col gap-2 pl-4">
@@ -67,5 +73,19 @@ export class HomePage extends HTMLElement {
                 </div>
             </div>
             `;
+
+    const image = this.querySelector("#home-image img");
+    const pageComponent = this.querySelector("#page-component");
+
+    // Check if the image is already loaded
+    if (image.complete) {
+      // If already loaded, remove the hidden class immediately
+      pageComponent.classList.remove("hidden");
+    } else {
+      // Otherwise, wait for it to load
+      image.onload = () => {
+        pageComponent.classList.remove("hidden");
+      };
     }
+  }
 }

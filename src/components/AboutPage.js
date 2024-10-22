@@ -1,25 +1,24 @@
 export class AboutPage extends HTMLElement {
-    constructor() {
-        super();
+  constructor() {
+    super();
 
-        // const styles = document.createElement('style');
-        // this.root.appendChild(styles);
+    // const styles = document.createElement('style');
+    // this.root.appendChild(styles);
 
-        // async function loadCSS() {
-        //     const request = await fetch("/components/MenuPage.css");
-        //     styles.textContent = await request.text();
-        // }
-        // loadCSS();  
+    // async function loadCSS() {
+    //     const request = await fetch("/components/MenuPage.css");
+    //     styles.textContent = await request.text();
+    // }
+    // loadCSS();
+  }
 
-    }
+  // when the component is attached to the DOM
+  connectedCallback() {
+    this.style.width = "100%";
+    this.innerHTML = "";
 
-    // when the component is attached to the DOM
-    connectedCallback() {
-        this.style.width = "100%";
-        this.innerHTML = "";
-
-        this.innerHTML = `
-            <div class="w-full px-12 mb-40">
+    this.innerHTML = `
+            <div id="page-component" class="hidden w-full px-12 mb-40">
                 <div id="about-title" class="w-full flex flex-col justify-start mb-14">
                     <h1 class="text-4xl font-bold mt-3" lang-key="about-title"></h1>
                     <p lang-key="about-description" class="text-sm text-gray-500 pt-1"></p>
@@ -29,8 +28,8 @@ export class AboutPage extends HTMLElement {
                     <h2 lang-key="about-education-title" class="text-2xl font-bold"></h2>
 
                     <div id="uai-block" class="bg-uaiLightCursorGradient dark:bg-uaiDarkCursorGradient hover:scale-[1.02] transition-transform duration-500 ease-in-out flex flex-col-reverse md:flex-row justify-center items-center gap-12 p-4 border border-gray-200 dark:border-[#202325] min-h-64 rounded-2xl">
-                        <div class="max-w-[200px]  bg-black h-[200px] rounded-full flex items-center justify-center">
-                            <img class="p-4" src="/assets/uai2.png" alt="uai">
+                        <div id="image-container" class="max-w-[200px]  bg-black h-[200px] rounded-full flex items-center justify-center">
+                            <img  class="p-4" src="/assets/uai2.png" alt="uai">
                         </div>
                         <div class="max-w-[236px] flex flex-col gap-2 w-full">
                             <h3 lang-key="about-uai-title" class="text-xl font-bold"></h3>
@@ -65,5 +64,19 @@ export class AboutPage extends HTMLElement {
 
             </div>
         `;
+
+    const image = this.querySelector("#image-container img");
+    const pageComponent = this.querySelector("#page-component");
+
+    // Check if the image is already loaded
+    if (image.complete) {
+      // If already loaded, remove the hidden class immediately
+      pageComponent.classList.remove("hidden");
+    } else {
+      // Otherwise, wait for it to load
+      image.onload = () => {
+        pageComponent.classList.remove("hidden");
+      };
     }
+  }
 }
