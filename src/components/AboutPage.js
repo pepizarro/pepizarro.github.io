@@ -29,7 +29,7 @@ export class AboutPage extends HTMLElement {
 
                     <div id="uai-block" class="bg-uaiLightCursorGradient dark:bg-uaiDarkCursorGradient hover:scale-[1.02] transition-transform duration-500 ease-in-out flex flex-col-reverse md:flex-row justify-center items-center gap-12 p-4 border border-gray-200 dark:border-[#202325] min-h-64 rounded-2xl">
                         <div id="image-container" class="max-w-[200px]  bg-black h-[200px] rounded-full flex items-center justify-center">
-                            <img  class="p-4" src="/assets/uai2.png" alt="uai">
+                            <img class="p-4" src="/assets/uai2.png" alt="uai">
                         </div>
                         <div class="max-w-[236px] flex flex-col gap-2 w-full">
                             <h3 lang-key="about-uai-title" class="text-xl font-bold"></h3>
@@ -68,12 +68,9 @@ export class AboutPage extends HTMLElement {
     const image = this.querySelector("#image-container img");
     const pageComponent = this.querySelector("#page-component");
 
-    // Check if the image is already loaded
     if (image.complete) {
-      // If already loaded, remove the hidden class immediately
       pageComponent.classList.remove("hidden");
     } else {
-      // Otherwise, wait for it to load
       image.onload = () => {
         pageComponent.classList.remove("hidden");
       };
