@@ -77,6 +77,22 @@ export class ProjectsPage extends HTMLElement {
                         </div>
                     </div>
 
+                    <div id="project-separator" class="border-b border-gray-300 dark:border-gray-800 opacity-70"></div>
+
+
+                    <div id="project-portfolio">
+                        <div class="flex flex-row gap-4 items-center mb-8">
+                            <div id="image-container">
+                                <img src="/assets/js.png" class="w-auto h-[76px]" alt="Redis Logo">
+                            </div>
+                            <div class="flex flex-col items-start">
+                                <h2 lang-key="portfolio-title" class="text-xl font-medium"></h2>
+                                <a lang-key="code" href="https://github.com/pepizarro/pepizarro.github.io" target="_blank" class="text-gray-500 hover:underline"></a>
+                            </div>
+                        </div>
+
+                        <p lang-key="portfolio-description" class="text-gray-800 dark:text-gray-400 text-pretty text-justify"></p>
+                    </div>
 
                 </div>
             </div>

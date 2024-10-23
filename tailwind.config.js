@@ -11,6 +11,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
+        bodyLight: "linear-gradient(180deg, #F2F3F5 0%, #ffffff 100%)",
+        bodyDark: "linear-gradient(180deg, #010101 0%, #000000 100%)",
+
         leasityLightCursorGradient:
           "radial-gradient(farthest-corner at var(--x) var(--y), #6484EF 0%, #E4E9FC 0%, #ffffff 90%)",
         uaiLightCursorGradient:

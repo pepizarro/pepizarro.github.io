@@ -1,53 +1,54 @@
 {
-    "navbar": {
-        "home": "Home",
-        "about": "Sobre mí",
-        "contact": "Contacto"
-    },
-    "change-theme": "Tema",
-    "homepage-description": "Estudiante de la universidad uai...",
-    "homepage-text": "Soy un estudiante de Ingeniería Civil Informática en la UAI. Me apasiona construir y entender el software, actualmente estoy especialmente interesado en el desarrollo backend y los sistemas distribuidos. \n",
-    "homepage-skills": "Habilidades e Intereses",
-    "locale-test": "Probando Locale",
+  "navbar": {
+    "home": "Home",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "change-theme": "Tema",
+  "homepage-description": "Estudiante de la universidad uai...",
+  "homepage-text": "Soy un estudiante de Ingeniería Civil Informática en la UAI. Me apasiona construir y entender el software, actualmente estoy especialmente interesado en el desarrollo backend y los sistemas distribuidos. \n",
+  "homepage-skills": "Habilidades e Intereses",
+  "locale-test": "Probando Locale",
 
-    "about-title": "Sobre mí",
-    "about-description": "A quick view of my education and professional experience...",
-    "about-description": "Una vista rápida de mi educación y experiencia profesional...",
+  "about-title": "Sobre mí",
+  "about-description": "A quick view of my education and professional experience...",
+  "about-description": "Una vista rápida de mi educación y experiencia profesional...",
 
-    "about-education-title": "Educación",
+  "about-education-title": "Educación",
 
-    "about-uai-title": "Ingeniería Civil en Informática",
+  "about-uai-title": "Ingeniería Civil en Informática",
 
-    "about-uai-description": "Bachelor's degree in CS Engineering or Informatics Engineering at Universidad Adolfo Ibáñez, Santiago, Chile.",
-    "about-uai-description": "Título de Ingeniería Civil en Informática en la Universidad Adolfo Ibáñez, Santiago, Chile.",
-    "about-uai-caption": "Soy estudiante de cuarto año en la Universidad Adolfo Ibáñez. He completado cursos como Estructuras de Datos y Algoritmos, Bases de Datos, Redes de Computadoras, Inteligencia Artificial, Programación Profesional y más.",
-    "about-uai-caption2": "Participé en una investigación, contribuyendo al diseño y desarrollo de una biblioteca C++ para agentes de aprendizaje por refuerzo e implementando con éxito un agente Q-learning para múltiples entornos. Esta experiencia me proporcionó una comprensión profunda del campo del aprendizaje por refuerzo y la capacidad de trabajar con grandes bases de código.",
+  "about-uai-description": "Bachelor's degree in CS Engineering or Informatics Engineering at Universidad Adolfo Ibáñez, Santiago, Chile.",
+  "about-uai-description": "Título de Ingeniería Civil en Informática en la Universidad Adolfo Ibáñez, Santiago, Chile.",
+  "about-uai-caption": "Soy estudiante de cuarto año en la Universidad Adolfo Ibáñez. He completado cursos como Estructuras de Datos y Algoritmos, Bases de Datos, Redes de Computadoras, Inteligencia Artificial, Programación Profesional y más.",
+  "about-uai-caption2": "Participé en una investigación, contribuyendo al diseño y desarrollo de una biblioteca C++ para agentes de aprendizaje por refuerzo e implementando con éxito un agente Q-learning para múltiples entornos. Esta experiencia me proporcionó una comprensión profunda del campo del aprendizaje por refuerzo y la capacidad de trabajar con grandes bases de código.",
 
+  "about-experience-title": "Experiencia",
 
-    "about-experience-title": "Experiencia",
+  "about-leasity-title": "Prácticante de Desarrollador de Software en Backend",
+  "about-leasity-date": "2023 - 2024 / 3 Meses",
+  "about-leasity-description": "Summer internship at Leasity, specializing in backend development.",
+  "about-leasity-description": "Práctica de verano en Leasity, especializándome en desarrollo backend.",
+  "about-leasity-caption": "Leasity es una startup que se especializa en software de gestión de propiedades. Trabajé en el equipo de backend, asumiendo proyectos que mejoraron en gran medida mis habilidades técnicas y de diseño. Principalmente desarrollé microservicios en Golang y creé herramientas internas. Las principales tecnologías que utilicé fueron Golang, Docker y AWS usando servicios como S3, y también adquirí familiaridad con otras tecnologías como Kafka.",
+  "about-leasity-caption2": "Esta experiencia mejoró mi capacidad para diseñar y desarrollar programas grandes y mantenibles, así como mi comprensión del proceso de desarrollo de software en un entorno profesional.",
 
-    "about-leasity-title": "Prácticante de Desarrollador de Software en Backend",
-    "about-leasity-date": "2023 - 2024 / 3 Meses",
-    "about-leasity-description": "Summer internship at Leasity, specializing in backend development.",
-    "about-leasity-description": "Práctica de verano en Leasity, especializándome en desarrollo backend.",
-    "about-leasity-caption": "Leasity es una startup que se especializa en software de gestión de propiedades. Trabajé en el equipo de backend, asumiendo proyectos que mejoraron en gran medida mis habilidades técnicas y de diseño. Principalmente desarrollé microservicios en Golang y creé herramientas internas. Las principales tecnologías que utilicé fueron Golang, Docker y AWS usando servicios como S3, y también adquirí familiaridad con otras tecnologías como Kafka.",
-    "about-leasity-caption2": "Esta experiencia mejoró mi capacidad para diseñar y desarrollar programas grandes y mantenibles, así como mi comprensión del proceso de desarrollo de software en un entorno profesional.",
+  "projects-title": "Proyectos",
+  "projects-description": "Algunos de mis proyectos tanto personales como de la universidad.",
+  "code": "Código",
 
-    "projects-title": "Proyectos",
-    "projects-description": "Algunos de mis proyectos tanto personales como de la universidad.",
-    "code": "Código",
+  "redis-title": "Redis desde cero",
+  "redis-description": "Desarrollé un clon de Redis en Golang, fue una experiencia muy entretenida y educativa. Este proyecto me permitió aprender sobre el funcionamiento a detalle de Redis, lo que me dio una comprensión más profunda de algunas de las decisiones de diseño y desafíos involucrados en la construcción de un sistema de este estilo, aunque sea una versión simplificada. \n \n Las principales características de mi implementación incluyen leer e interpretar un archivo RDB (que fue mi parte favorita), implementar un parser del protocolo RESP y cuenta con un soporte básico para la replicación y transacciones de Redis. \n \n A través de este proyecto, adquirí experiencia utilizando funcionalidades claves de Go, como la concurrencia y los genéricos, y profundicé mis conocimientos en áreas como la persistencia de datos, la red y la replicación.",
+  "redis-codecrafters1": "\nEste proyecto fue construido utilizando la plataforma de ",
+  "redis-codecrafters2": "",
 
-    "redis-title": "Redis desde cero",
-    "redis-description": "Desarrollé un clon de Redis en Golang, fue una experiencia muy entretenida y educativa. Este proyecto me permitió aprender sobre el funcionamiento a detalle de Redis, lo que me dio una comprensión más profunda de algunas de las decisiones de diseño y desafíos involucrados en la construcción de un sistema de este estilo, aunque sea una versión simplificada. \n \n Las principales características de mi implementación incluyen leer e interpretar un archivo RDB (que fue mi parte favorita), implementar un parser del protocolo RESP y cuenta con un soporte básico para la replicación y transacciones de Redis. \n \n A través de este proyecto, adquirí experiencia utilizando funcionalidades claves de Go, como la concurrencia y los genéricos, y profundicé mis conocimientos en áreas como la persistencia de datos, la red y la replicación.",
-    "redis-codecrafters1": "\nEste proyecto fue construido utilizando la plataforma de ",
-    "redis-codecrafters2": "",
+  "interny-title": "Interny",
+  "interny-subtitle": "Plataforma Centralizada de Gestión de Prácticas Profesionales",
+  "interny-description1": "Como parte de un proyecto en equipo, contribuí al desarrollo de Interny, una plataforma diseñada para centralizar la gestión de prácticas profesionales universitarias. La plataforma permite a los estudiantes buscar prácticas, registrar su trabajo y recibir retroalimentación tanto de la empresa como de los profesores.",
+  "interny-description2": "The platform also supports teachers and career directors by providing them with tools to visualize student data, evaluate internships, and maintain communication throughout the process.",
+  "interny-description2": "La plataforma también puede ser utilizada por profesores y directores de carrera, proporcionándoles herramientas para visualizar los datos de los estudiantes, evaluar las prácticas y mantener la comunicación a lo largo de todo el proceso.",
+  "interny-description3": "Además, las empresas pueden utilizar Interny para publicar ofertas de prácticas, evaluar el rendimiento de los estudiantes y seleccionar a los candidatos ideales para sus puestos.",
+  "interny-description4": "Mis contribuciones se centraron en la arquitectura y el diseño de la aplicación, el desarrollo del front-end en NextJS y todo el proceso de deployment utilizando herramientas como Docker y AWS EC2 y S3.",
 
-    "interny-title": "Interny",
-    "interny-subtitle": "Plataforma Centralizada de Gestión de Prácticas Profesionales",
-    "interny-description1": "Como parte de un proyecto en equipo, contribuí al desarrollo de Interny, una plataforma diseñada para centralizar la gestión de prácticas profesionales universitarias. La plataforma permite a los estudiantes buscar prácticas, registrar su trabajo y recibir retroalimentación tanto de la empresa como de los profesores.",
-    "interny-description2": "The platform also supports teachers and career directors by providing them with tools to visualize student data, evaluate internships, and maintain communication throughout the process.",
-    "interny-description2": "La plataforma también puede ser utilizada por profesores y directores de carrera, proporcionándoles herramientas para visualizar los datos de los estudiantes, evaluar las prácticas y mantener la comunicación a lo largo de todo el proceso.",
-    "interny-description3": "Además, las empresas pueden utilizar Interny para publicar ofertas de prácticas, evaluar el rendimiento de los estudiantes y seleccionar a los candidatos ideales para sus puestos.",
-    "interny-description4": "Mis contribuciones se centraron en la arquitectura y el diseño de la aplicación, el desarrollo del front-end en NextJS y todo el proceso de deployment utilizando herramientas como Docker y AWS EC2 y S3."
-
+  "portfolio-title": "Esta página",
+  "portfolio-description": "SPA escrita en vanilla JS, ha sido un buen ejercicio para aprender más sobre JS y ver como aplicar conceptos que utilizan los frameworks modernos."
 }

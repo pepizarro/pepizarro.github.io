@@ -56,7 +56,7 @@ export class HomePage extends HTMLElement {
                 </div>
                 <div id="home-description" class="col-span-2 row-span-1 py-3 md:mt-1">
                     <p lang-key="homepage-text" class="text-pretty  mb-3 text-gray-800 dark:text-gray-300"></p>
-                    <a target="_blank" href="/cv-es.pdf" class="flex items-center text-blue-600 dark:text-blue-200 hover:underline">
+                    <a target="_blank" href="/cv-es.pdf" class="flex items-center w-min text-blue-600 dark:text-blue-200 hover:underline">
                         <p class="mr-1">CV</p>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M4.53033 4.75C4.53033 4.33579 4.86612 4 5.28033 4H11.2907C11.705 4 12.0407 4.33579 12.0407 4.75V10.7604C12.0407 11.1746 11.705 11.5104 11.2907 11.5104C10.8765 11.5104 10.5407 11.1746 10.5407 10.7604V6.56066L5.28033 11.8211C4.98744 12.114 4.51256 12.114 4.21967 11.8211C3.92678 11.5282 3.92678 11.0533 4.21967 10.7604L9.48008 5.5H5.28033C4.86612 5.5 4.53033 5.16421 4.53033 4.75Z"
