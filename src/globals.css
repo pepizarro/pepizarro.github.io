@@ -36,6 +36,9 @@
 #projects-description {
   animation: fadeIn 0.9s forwards;
 }
+#projects-current {
+  animation: fadeIn 1s forwards;
+}
 #project-redis {
   animation: fadeIn 1.2s forwards;
 }

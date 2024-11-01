@@ -19,14 +19,25 @@ export class ProjectsPage extends HTMLElement {
 
     this.innerHTML = `
             <div id="page-component" class="hidden w-full px-12 mb-28">
-                <div class="w-full flex flex-col justify-start mb-14">
+                <div class="w-full flex flex-col justify-start mb-10">
                     <h1 class="text-4xl font-bold mt-3" id="projects-title" lang-key="projects-title"></h1>
                     <p lang-key="projects-description" id="projects-description" class="text-gray-800 dark:text-gray-400 pt-1"></p>
                 </div>
 
-
                 
                 <div class="flex flex-col gap-8">
+                    <div id="projects-current">
+                        <h2 lang-key="projects-current-title" class="text-lg font-semibold mb-3"></h2>
+                        <ul class="list-disc list-inside text-gray-800 dark:text-gray-400 text-pretty">
+                            <li lang-key="projects-current-1" class="text-black dark:text-white font-semibold  text-pretty"></li>
+                            <p lang-key="projects-current-1-description" class="pl-3 mb-2 text-gray-800 dark:text-gray-400 text-pretty "></p>
+                            <li lang-key="projects-current-2" class="text-black dark:text-white font-semibold  text-pretty"></li>
+                            <p lang-key="projects-current-2-description" class="pl-3 mb-2 text-gray-800 dark:text-gray-400 text-pretty"></p>
+                        </ul>
+                    </div>
+
+                    <div id="project-separator" class="border-b border-gray-300 dark:border-gray-800 opacity-70"></div>
+
                     <div id="project-redis">
                         <div class="flex flex-row gap-4 items-center mb-8">
                             <div id="image-container">

@@ -7,7 +7,7 @@
 
   "change-theme": "Theme",
   "homepage-description": "Student of the uai university...",
-  "homepage-text": "I am a student pursuing Informatics Engineering at UAI. I'm passionate about building and understanding software, with special interests in backend development and distributed systems. \n",
+  "homepage-text": "I am a student pursuing Computer Science at UAI. I'm passionate about building and understanding software, with special interests in backend development and distributed systems. \n",
   "homepage-skills": "Skills and Interests",
 
   "locale-test": "Testing Locale",
@@ -17,10 +17,10 @@
 
   "about-education-title": "Education",
 
-  "about-uai-title": "Informatics Engineering",
-  "about-uai-description": "Bachelor's degree in CS Engineering or Informatics Engineering at Universidad Adolfo Ibáñez, Santiago, Chile.",
-  "about-uai-caption": "I am a fourth-year student at Universidad Adolfo Ibáñez. I have completed key courses such as Data Structures and Algorithms, Databases, Computer Networks, Artificial Intelligence, Professional Programming and more.",
-  "about-uai-caption2": "I participated in a research, contributing to the design and development of a C++ library for reinforcement learning agents and successfully implementing a Q-learning agent for multiple environments. This experience provided me with a profound understanding of the reinforcement learning field and the ability to work with large codebases.",
+  "about-uai-title": "Computer Science",
+  "about-uai-description": "Studying CS Engineering at Universidad Adolfo Ibáñez, Santiago, Chile.",
+  "about-uai-caption": "I am a fourth-year student at Universidad Adolfo Ibáñez. I have completed key courses such as Data Structures and Algorithms, Databases, Computer Networks, Artificial Intelligence, Professional Programming, Operating Systems, Cybersecurity and more.",
+  "about-uai-caption2": "I contributed to a research project focused on designing and developing a C++ library for reinforcement learning agents, where I successfully implemented a Q-learning agent for multiple environments. This experience gave me a deep understanding of reinforcement learning principles.",
 
   "about-experience-title": "Experience",
 
@@ -31,8 +31,15 @@
   "about-leasity-caption2": "This experience enhanced my ability to design and develop large, maintainable programs, as well as my understanding of the software development process in a professional environment.",
 
   "projects-title": "Projects",
-  "projects-description": "Some of my school and personal projects",
+  "projects-description": "Some of my school and personal projects.",
   "code": "Code",
+
+  "projects-current-title": "Currently working on",
+  "projects-current-1": "Acuo",
+  "projects-current-1-description": "A web application for a early-stage agriculture startup, in Next.js.",
+
+  "projects-current-2": "Gotin",
+  "projects-current-2-description": "WebSocket implementation written in Golang, to be used in a web-based game later.",
 
   "redis-title": "Redis From Scratch",
   "redis-description": "I developed a Redis clone in Golang, which was a really fun and educational experience. This project allowed me to learn about the internals of Redis, gaining a deeper understanding of some of the design choices and challenges involved in building such a system, even in a simplified form. \n \n The main features of my implementation include reading and interpreting an RDB file (which was my favourite part), implementing a RESP protocol parser, and adding basic support for Redis replication and transactions. \n \n Through this project, I gained experience using key Go features, such as concurrency and generics, and deepened my knowledge in areas like data persistence, networking and replication.",

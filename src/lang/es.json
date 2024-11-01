@@ -18,9 +18,8 @@
 
   "about-uai-title": "Ingeniería Civil en Informática",
 
-  "about-uai-description": "Bachelor's degree in CS Engineering or Informatics Engineering at Universidad Adolfo Ibáñez, Santiago, Chile.",
-  "about-uai-description": "Título de Ingeniería Civil en Informática en la Universidad Adolfo Ibáñez, Santiago, Chile.",
-  "about-uai-caption": "Soy estudiante de cuarto año en la Universidad Adolfo Ibáñez. He completado cursos como Estructuras de Datos y Algoritmos, Bases de Datos, Redes de Computadoras, Inteligencia Artificial, Programación Profesional y más.",
+  "about-uai-description": "Estudiante de Ingeniería Civil en Informática en la Universidad Adolfo Ibáñez, Santiago, Chile.",
+  "about-uai-caption": "Soy estudiante de cuarto año en la Universidad Adolfo Ibáñez. He completado cursos como Estructuras de Datos y Algoritmos, Bases de Datos, Redes de Computadoras, Inteligencia Artificial, Programación Profesional, Sistemas Operativos, Cyberseguridad y más.",
   "about-uai-caption2": "Participé en una investigación, contribuyendo al diseño y desarrollo de una biblioteca C++ para agentes de aprendizaje por refuerzo e implementando con éxito un agente Q-learning para múltiples entornos. Esta experiencia me proporcionó una comprensión profunda del campo del aprendizaje por refuerzo y la capacidad de trabajar con grandes bases de código.",
 
   "about-experience-title": "Experiencia",
@@ -35,6 +34,13 @@
   "projects-title": "Proyectos",
   "projects-description": "Algunos de mis proyectos tanto personales como de la universidad.",
   "code": "Código",
+
+  "projects-current-title": "Actualmente trabajando en",
+  "projects-current-1": "Acuo",
+  "projects-current-1-description": "Una aplicación web para una startup de agricultura en etapa temprana, en Next.js.",
+
+  "projects-current-2": "Gotin",
+  "projects-current-2-description": "Implementación de WebSocket escrita en Golang, planeo utilizarla en un juego de navegador más adelante.",
 
   "redis-title": "Redis desde cero",
   "redis-description": "Desarrollé un clon de Redis en Golang, fue una experiencia muy entretenida y educativa. Este proyecto me permitió aprender sobre el funcionamiento a detalle de Redis, lo que me dio una comprensión más profunda de algunas de las decisiones de diseño y desafíos involucrados en la construcción de un sistema de este estilo, aunque sea una versión simplificada. \n \n Las principales características de mi implementación incluyen leer e interpretar un archivo RDB (que fue mi parte favorita), implementar un parser del protocolo RESP y cuenta con un soporte básico para la replicación y transacciones de Redis. \n \n A través de este proyecto, adquirí experiencia utilizando funcionalidades claves de Go, como la concurrencia y los genéricos, y profundicé mis conocimientos en áreas como la persistencia de datos, la red y la replicación.",
